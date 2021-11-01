@@ -1,0 +1,44 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+     <servlet>	
+		<servlet-name>s1</servlet-name>	
+		<servlet-class>GreetServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s1</servlet-name>	
+		<url-pattern>/greet</url-pattern> 
+   </servlet-mapping>	
+   
+    <servlet>	
+		<servlet-name>ds</servlet-name>	
+		<servlet-class>DateTimeService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ds</servlet-name>	
+		<url-pattern>/samay</url-pattern> 
+   </servlet-mapping>	
+   
+    <servlet>	
+		<servlet-name>s3</servlet-name>	
+		<servlet-class>DiceService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s3</servlet-name>	
+		<url-pattern>/getdice</url-pattern> 
+   </servlet-mapping>	
+     
+    <servlet>	
+		<servlet-name>s4</servlet-name>	
+		<servlet-class>SisPromoService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s4</servlet-name>	
+		<url-pattern>/sispro</url-pattern> 
+   </servlet-mapping>	
+   
+   
+</web-app>

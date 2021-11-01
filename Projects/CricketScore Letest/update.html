@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AdminLogin</title>
+	<style type="text/css">
+		fieldset {
+			background-color: black;
+			background-opacity: 0.9;
+			background: transparent;
+			border-radius: 24px;
+			height: 100px;
+			width: 1000px;
+			margin-top: 40px;
+			margin-left: 70px;
+			margin-right: 90px;
+			padding: 40px;
+			border-color: red;
+		}
+	input[type=text], [type=password] {
+		padding: 5px;
+		border-radius: 24px;
+		border-color: red;
+
+	}
+	input[type=submit] {
+		padding: 3px;
+		border-color: red;
+		border-radius: 24px;
+		width: 90px;
+	}
+	input[type=submit]:hover {
+		border-color: blue;
+	}
+	input[type=password]:hover {
+		border-color: blue;
+	} 
+	input[type=text]:hover {
+		border-color: blue;
+	}
+	td {
+		padding: 5px;
+	}
+	.title {
+		font-family: cursive;
+		font-size: 22px;
+	}
+
+	</style>
+</head>
+<body style="background-color: pink; color: black">
+<hr style="color: red;">
+	<h1><a style="color: blue; margin-left: 1100px;" href="index.html">Log-Out</a></h1>
+<hr style="color: red;">
+<fieldset>
+	<legend align="center"><b>Score Update Panel</b></legend>
+	<table width="100%">
+		<form action="update" method="post">
+			<tr>
+				<th align="left">Over</th>
+				<th align="left">Ball</th>
+				<th align="left">Run</th>
+			</tr>
+			<tr>
+				<td><input type="text" name="over" value="" required="" placeholder="Enter Over"></td>
+				<td><input type="text" name="ball" value="" required="" placeholder="Ball"></td>
+				<td><input type="text" name="run" value="" required="" placeholder="Run"></td>
+				<td><input type="submit" value="update"></td>
+			</tr>
+		</form>
+	</table>
+</fieldset>
+</body>
+</html>

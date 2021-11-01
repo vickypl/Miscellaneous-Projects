@@ -1,0 +1,27 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   <servlet>	
+		<servlet-name>sss</servlet-name>	
+		<servlet-class>SearchStudentServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>sss</servlet-name>	
+		<url-pattern>/searchstu</url-pattern> 
+   </servlet-mapping>	
+
+   <servlet>	
+		<servlet-name>sus</servlet-name>	
+		<servlet-class>UpdateStudentServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>sus</servlet-name>	
+		<url-pattern>/updatestu</url-pattern> 
+   </servlet-mapping>	
+   
+    
+   
+</web-app>

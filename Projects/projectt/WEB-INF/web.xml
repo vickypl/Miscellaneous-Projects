@@ -1,0 +1,51 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   
+     <servlet>	
+		<servlet-name>hs1</servlet-name>	
+		<servlet-class>HomeService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>hs1</servlet-name>	
+		<url-pattern>/hs</url-pattern> 
+   </servlet-mapping>	
+    <servlet>	
+		<servlet-name>ss1</servlet-name>	
+		<servlet-class>Service1</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ss1</servlet-name>	
+		<url-pattern>/s1</url-pattern> 
+   </servlet-mapping>	
+   
+   
+     <servlet>	
+		<servlet-name>ss2</servlet-name>	
+		<servlet-class>Service2</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ss2</servlet-name>	
+		<url-pattern>/s2</url-pattern> 
+   </servlet-mapping>	
+     <servlet>	
+		<servlet-name>ss3</servlet-name>	
+		<servlet-class>Service3</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ss3</servlet-name>	
+		<url-pattern>/s3</url-pattern> 
+   </servlet-mapping>
+   
+       <servlet>	
+		<servlet-name>ss4</servlet-name>	
+		<servlet-class>Service4</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ss4</servlet-name>	
+		<url-pattern>/s4</url-pattern> 
+   </servlet-mapping>
+</web-app>

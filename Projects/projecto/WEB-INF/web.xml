@@ -1,0 +1,36 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   
+     <servlet>	
+		<servlet-name>s1</servlet-name>	
+		<servlet-class>DiceService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s1</servlet-name>	
+		<url-pattern>/dice</url-pattern> 
+   </servlet-mapping>	
+   
+     <servlet>	
+		<servlet-name>s2</servlet-name>	
+		<servlet-class>RandomService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s2</servlet-name>	
+		<url-pattern>/rand</url-pattern> 
+   </servlet-mapping>	
+   
+   
+     <servlet>	
+		<servlet-name>s3</servlet-name>	
+		<servlet-class>ReportServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s3</servlet-name>	
+		<url-pattern>/webreport</url-pattern> 
+   </servlet-mapping>	
+   
+</web-app>

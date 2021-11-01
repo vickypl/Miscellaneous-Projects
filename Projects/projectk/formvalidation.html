@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>surendra it solution</title>
+<script>
+   function  test(obj){
+       //alert(obj);
+       //alert(obj.value);
+	   
+var alphaExp = /^[a-zA-Z ]+$/;
+if(obj.value.match(alphaExp)){
+      // alert("ok");
+	   obj.style.color = 'black';
+document.getElementById('stu_name_err').innerHTML="";
+ return true;
+}else{
+  
+obj.focus();
+document.getElementById('stu_name_err').innerHTML="Worng Input";
+obj.style.color = 'red';
+	  
+return false;
+}
+	   
+	   
+	   
+   }
+</script>
+</head>
+<body>
+
+ 
+ <form action="#">
+  
+  name <input  onblur="test(this);" type="text" name="stu_name"   autofocus  >
+ <span id="stu_name_err" style=""></span>  
+    <input type="submit" value="send"></td>
+  
+  </form>
+ 
+</body>
+</html>

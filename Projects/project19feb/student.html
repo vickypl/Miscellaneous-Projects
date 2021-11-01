@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student</title>
+<style type="text/css">
+	tr {
+		color: white;
+		padding: 10px;
+	}
+	td {
+		color: white;
+		padding: 10px;
+	}
+	input[type=text] {
+		width: 200px;
+		border-radius: 5px;
+	}
+</style>
+</head>
+<body style="background-color: black; color: white;">
+<h3><a style="color: white; padding: 40px;" href="index.html">Home</a></h3>
+<h1><p>Submit Student detail here: </p></h1>
+<hr style="color: white; height: 10px;">
+<center>
+<form action="stu">
+<table style="border: 100px; color: white; border-color: white; padding: 30px;">
+	<tr>
+	<td>Roll Number:</td>
+	<td><input type="text" name="roll" placeholder="Enter Roll Number" required></td>
+	</tr>
+	<tr>
+	<td>Full Name:</td>
+	<td><input type="text" name="name" placeholder="Enter name" required></td>
+	</tr>
+	<tr>
+	<td>Subject:</td>
+	<td><input type="text" name="subject" placeholder="Enter subject" required></td>
+	</tr>
+	<tr>
+	<td>Gender:</td>
+	<td><input type="radio" name="gender" value="male">Male</input>
+		   <input type="radio" name="gender" value="female">female</input>
+		   <input type="radio" name="gender" value="other">other</input>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	Skills:
+	</td>
+	<td>
+		<input type="checkbox" name="skill" value="c">C</input>
+		<input type="checkbox" name="skill" value="c++">C++</input>
+		<input type="checkbox" name="skill" value="java">JAVA</input>
+		<input type="checkbox" name="skill" value="python">PYTHON</input>
+		<input type="checkbox" name="skill" value="javascript">JavaSCript</input>
+	</td>
+	</tr>
+	<tr>
+		<td><input type="reset" name="res" value="refresh"></td>
+		<td><input type="Submit" name="submit" value="Submit"></td>
+	</tr>
+</table>
+</form>
+</center>
+<hr style="color: white; height: 10px;">
+</body>
+</html>>

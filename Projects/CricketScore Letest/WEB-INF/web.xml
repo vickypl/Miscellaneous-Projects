@@ -1,0 +1,37 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+    
+   <servlet>	
+		<servlet-name>s1</servlet-name>	
+		<servlet-class>MyServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s1</servlet-name>	
+		<url-pattern>/first</url-pattern> 
+   </servlet-mapping>	
+   
+   <!--  -->
+
+    <servlet> 
+    <servlet-name>s2</servlet-name> 
+    <servlet-class>AdminLogin</servlet-class>  
+    </servlet> 
+    <servlet-mapping>  
+      <servlet-name>s2</servlet-name>  
+      <url-pattern>/admin</url-pattern> 
+    </servlet-mapping>
+
+    <!--  -->
+
+    <servlet> 
+    <servlet-name>s3</servlet-name> 
+    <servlet-class>ScoreUpdate</servlet-class>  
+    </servlet> 
+    <servlet-mapping>  
+      <servlet-name>s3</servlet-name>  
+      <url-pattern>/update</url-pattern> 
+    </servlet-mapping>
+</web-app>

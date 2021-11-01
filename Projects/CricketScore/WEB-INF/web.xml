@@ -1,0 +1,16 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+    
+   <servlet>	
+		<servlet-name>s1</servlet-name>	
+		<servlet-class>MyServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s1</servlet-name>	
+		<url-pattern>/first</url-pattern> 
+   </servlet-mapping>	
+   
+</web-app>

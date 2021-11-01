@@ -1,0 +1,73 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   <servlet>	
+		<servlet-name>ts</servlet-name>	
+		<servlet-class>TestServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ts</servlet-name>	
+		<url-pattern>/test</url-pattern> 
+   </servlet-mapping>	
+   
+   
+    <servlet>	
+		<servlet-name>sf</servlet-name>	
+		<servlet-class>StudentFormServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>sf</servlet-name>	
+		<url-pattern>/stuform</url-pattern> 
+   </servlet-mapping>
+   <servlet>	
+		<servlet-name>sss</servlet-name>	
+		<servlet-class>StudentAddServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>sss</servlet-name>	
+		<url-pattern>/addstu</url-pattern> 
+   </servlet-mapping>
+   
+    <servlet>	
+		<servlet-name>ds1</servlet-name>	
+		<servlet-class>ShowAllDeptServlet1</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ds1</servlet-name>	
+		<url-pattern>/alldept1</url-pattern> 
+   </servlet-mapping>
+   
+      <servlet>	
+		<servlet-name>ds2</servlet-name>	
+		<servlet-class>ShowAllDeptServlet2</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ds2</servlet-name>	
+		<url-pattern>/alldept2</url-pattern> 
+   </servlet-mapping>
+   
+   
+      <servlet>	
+		<servlet-name>dls</servlet-name>	
+		<servlet-class>DeptartmentLinkServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>dls</servlet-name>	
+		<url-pattern>/deptlink</url-pattern> 
+   </servlet-mapping>
+   
+    <servlet>	
+		<servlet-name>s5</servlet-name>	
+		<servlet-class>ShowAllEmpByDeptNOServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s5</servlet-name>	
+		<url-pattern>/getallempbydeptno</url-pattern> 
+   </servlet-mapping>
+   
+   
+   
+</web-app>

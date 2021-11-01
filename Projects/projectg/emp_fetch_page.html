@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>surendra it solution</title>
+</head>
+<body>
+
+<fieldset> <legend>way1</legend>
+<a href="getallemp">Get All Emp</a>
+</fieldset>
+
+<fieldset> <legend>way2</legend>
+<a href="getempsbydeptid?dept_no=10">get all emp of ac dept(10)</a><br>
+<a href="getempsbydeptid?dept_no=20">get all emp of res dept(20)</a><br>
+<a href="getempsbydeptid?dept_no=30">get all emp of sales dept(30)</a><br>
+<a href="getempsbydeptid?dept_no=40">get all emp of operation dept(40)</a><br>
+</fieldset>
+
+
+
+<fieldset> <legend>way3</legend>
+  <form action="getempsbydeptid">
+     Enter dept no <input type="text" name="dept_no" required>
+     <input type="submit" value="get employees">
+  </form>
+
+</fieldset>
+
+
+<fieldset> <legend>way4</legend>
+  
+  <form action="getempsbydeptid">
+     select dept
+	 <input type="radio" name="dept_no" value="10">10accounting
+	 <input type="radio" name="dept_no" value="20">20research
+	 <input type="radio" name="dept_no" value="30">30sales
+	 <input type="radio" name="dept_no" value="40">40operation
+     <input type="submit" value="get employees">
+  </form>
+
+</fieldset>
+
+
+
+
+<fieldset> <legend>way5</legend>
+  <form action="getempswithmultdept">
+     select dept
+	 <input type="checkbox" name="dept_no" value="10">accounting::10
+	 <input type="checkbox" name="dept_no" value="20">research::20
+	 <input type="checkbox" name="dept_no" value="30">sales::30
+	 <input type="checkbox" name="dept_no" value="40">operation::40
+     <input type="submit" value="get employees">
+  </form>
+
+</fieldset>
+
+
+
+<fieldset> <legend>way6</legend>
+  <form action="getempsbydeptid">
+     select dept
+	 
+	 <select   name="dept_no">
+	  <option value="10">10 accounting</option>
+	  <option value="20">20 Research</option>
+	  <option value="30">30 Sales</option>
+	  <option value="40">40 Operations</option>
+	 </select>
+     <input type="submit" value="get employees">
+  </form>
+
+</fieldset>
+
+
+
+<fieldset> <legend>way7 multilple</legend>
+  <form action="getempswithmultdept">
+     select dept
+	 
+	 <select   name="dept_no" multiple="multiple"  size="3">
+	  <option value="10">10 accounting</option>
+	  <option value="20">20 Research</option>
+	  <option value="30">30 Sales</option>
+	  <option value="40">40 Operations</option>
+	 </select>
+     <input type="submit" value="get employees">
+  </form>
+
+</fieldset>
+</body>
+</html>

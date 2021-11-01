@@ -1,0 +1,47 @@
+<web-app>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>rand</servlet-name>
+		<servlet-class>RandomGen</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>rand</servlet-name>
+		<url-pattern>/random</url-pattern>
+	</servlet-mapping>
+
+	<!--  -->
+		<servlet>
+		<servlet-name>stud</servlet-name>
+		<servlet-class>StudentServ</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>stud</servlet-name>
+		<url-pattern>/stu</url-pattern>	
+	</servlet-mapping>
+
+	<!--  -->
+
+	<servlet>
+		<servlet-name>words</servlet-name>
+		<servlet-class>WordServ</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>words</servlet-name>
+		<url-pattern>/wor</url-pattern>	
+	</servlet-mapping>
+
+	<!--  -->
+
+
+	<servlet>
+		<servlet-name>nums</servlet-name>
+		<servlet-class>NumberServ</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>nums</servlet-name>
+		<url-pattern>/numServ</url-pattern>	
+	</servlet-mapping>
+
+</web-app>

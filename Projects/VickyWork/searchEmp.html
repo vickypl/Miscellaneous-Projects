@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Employee</title>
+</head>
+<body style="background-color: black; color: white;">
+<hr>
+	<h1><a href="index.html">Home</a></h1>
+<hr>
+<fieldset style="margin-left: 370px; margin-right: 300px; margin-top: 90px; width: 400px; height: 360px;">
+<form action="empop">
+	<input style="padding: 9px; padding-right: 150px; border-radius: 10px;" type="text" name="id" value="" placeholder="Enter Employee id" required>
+	<input style="padding: 9px; border-radius: 10px;" type="submit" name="submit" value="Search">
+	<hr>
+</form>
+<form action="empop">
+	<h3>Check and Print by DeptNo.:</h3>
+	<input style="padding: 9px; padding-right: 150px; border-radius: 10px;" type="checkbox" name="ids" value="10">10
+	<input style="padding: 9px; padding-right: 150px; border-radius: 10px;" type="checkbox" name="ids" value="20">20
+	<input style="padding: 9px; padding-right: 150px; border-radius: 10px;" type="checkbox" name="ids" value="30">30
+	<input style="padding: 9px; border-radius: 10px;" type="submit" name="submit" value="GetEmp">
+	<hr>
+</form>
+<form action="empop">
+	<h3>Select and Print by JOB.:</h3>
+	<input style="padding: 9px; padding-right: 150px; border-radius: 10px;" type="radio" name="jbs" value="PRESIDENT">PRESIDENT
+	<input style="padding: 9px; padding-right: 150px; border-radius: 10px;" type="radio" name="jbs" value="MANAGER">MANAGER
+	<input style="padding: 9px; padding-right: 150px; border-radius: 10px;" type="radio" name="jbs" value="ANALYST">ANALYST
+	<input style="padding: 9px; border-radius: 10px;" type="submit" name="submit" value="GetEmp">
+	<hr>
+</form>
+<form action="empop">
+	<h3>Select Multiple JOBs for data.:</h3>
+	<select style="padding: 9px; padding-right: 150px; border-radius: 10px; height: 30px;" name="jobs" multiple>
+    	<option value="MANAGER">MANAGER</option>
+    	<option value="PRESIDENT">PRESIDENT</option>
+    	<option value="ANALYST">ANALYST</option>
+   		<option value="CLERK">CLERK</option>
+  	</select>
+  	<input style="padding: 9px; border-radius: 10px;" type="submit" name="submit" value="GetEmp">
+	<hr>
+</form>
+</fieldset>
+</body>
+</html>

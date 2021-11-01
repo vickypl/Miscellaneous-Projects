@@ -1,0 +1,71 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   <servlet>	
+		<servlet-name>ts</servlet-name>	
+		<servlet-class>TestServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ts</servlet-name>	
+		<url-pattern>/test</url-pattern> 
+   </servlet-mapping>	
+   
+    <servlet>	
+		<servlet-name>ts</servlet-name>	
+		<servlet-class>TableService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ts</servlet-name>	
+		<url-pattern>/tab</url-pattern> 
+   </servlet-mapping>
+   
+    <servlet>	
+		<servlet-name>s3</servlet-name>	
+		<servlet-class>ShowAllDeptServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s3</servlet-name>	
+		<url-pattern>/showdepts</url-pattern> 
+   </servlet-mapping>
+   
+   
+    <servlet>	
+		<servlet-name>s4</servlet-name>	
+		<servlet-class>ShowAllDeptServlet2</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s4</servlet-name>	
+		<url-pattern>/showdepts2</url-pattern> 
+   </servlet-mapping>
+   
+    <servlet>	
+		<servlet-name>s5</servlet-name>	
+		<servlet-class>ShowAllEmpServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s5</servlet-name>	
+		<url-pattern>/showemps</url-pattern> 
+   </servlet-mapping>
+   
+   
+    <servlet>	
+		<servlet-name>s6</servlet-name>	
+		<servlet-class>ShowAlProductServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s6</servlet-name>	
+		<url-pattern>/allproducts</url-pattern> 
+   </servlet-mapping>
+    <servlet>	
+		<servlet-name>s7</servlet-name>	
+		<servlet-class>SearchProductServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s7</servlet-name>	
+		<url-pattern>/searchproducts</url-pattern> 
+   </servlet-mapping>
+   
+</web-app>

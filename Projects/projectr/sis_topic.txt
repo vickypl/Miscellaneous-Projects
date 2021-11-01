@@ -1,0 +1,72 @@
+/*
+@Author:Surendra Kumar Sao
+
+	>>Software Architect and Corporate Trainer
+	>>+12 year exp in (mumbai,pune,hyd,bangaluru)
+	>>Java Certified SCJP & SCWCD with 98%
+	Trained more than 5k students and employees.
+    MCA from (NIT)National Institute of Technology Raipur(C.G.)
+	Email : sur.nit.mca@gmail.com
+	Mobile 7987234544  , 9009442844
+		@copyright  surendra 2020
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/reviews/7223178
+	https://www.urbanpro.com/raipur/surendra-kumar-sao/1334109?_tp=
+ 
+   CurrentYear ${2020} 
+ */
+
+03/03/2021 
+java: 
+full stack developer   1.5L 
+
+
+
+____________________networking ________________http _____
+http status code
+1xx Informational
+2xx Success       200 ok
+3xx Redirection
+4xx Client Error
+HTTP Status 401 Unauthorized
+HTTP Status 404 - /projectr/abcd
+HTTP Status 405 - HTTP method GET is not supported by this URL
+
+5xx Server Error
+HTTP Status 500 - 
+Internal Server Error
+A generic error message, given when an unexpected condition was encountered and no more specific
+message is suitable.
+
+
+2xx   200 OK 
+3xx
+4xx
+5xx
+
+__________networking(internet)_________browser (html)____________________
+html header  ::
+key = refresh     
+value = in second 
+www  
+  <meta charset="UTF-8">
+  <meta name="refresh" content="1">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="1">
+  
+
+
+http 
+javax.servlet.http.*;
+		HttpServlet
+		HttpServletRequest
+		HttpServletResponse
+
+MyServlet  extends HttpServlet
+
+how to set header
+
+		HttpServletResponse{
+		setHeader(String key , String value);
+		}

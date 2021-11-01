@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AdminLogin</title>
+	<style type="text/css">
+		fieldset {
+			background-color: black;
+			background-opacity: 0.9;
+			background: transparent;
+			border-radius: 24px;
+			height: 200px;
+			width: 300px;
+			margin-top: 100px;
+			margin-left: 470px;
+			margin-right: 450px;
+			padding: 40px;
+			border-color: red;
+		}
+	input[type=text], [type=password] {
+		padding: 5px;
+		border-radius: 24px;
+		border-color: red;
+
+	}
+	input[type=submit] {
+		padding: 3px;
+		border-color: red;
+		border-radius: 24px;
+		width: 90px;
+	}
+	input[type=submit]:hover {
+		border-color: blue;
+	}
+	input[type=password]:hover {
+		border-color: blue;
+	} 
+	input[type=text]:hover {
+		border-color: blue;
+	}
+	td {
+		padding: 5px;
+	}
+	.title {
+		font-family: cursive;
+		font-size: 22px;
+	}
+
+	</style>
+</head>
+<body style="background-color: pink; color: black">
+<hr style="color: red;">
+	<h1><a style="color: blue;" href="index.html">Home</a></h1>
+<hr style="color: red;">
+<fieldset>
+	<legend align="center"><b>Admin Panel</b></legend>
+	<h1 align="center" style="font-size: 20px;">Login</h1>
+	<table>
+		<form action="admin" method="post">
+			<tr>
+				<td class="title">Username</td>
+				<td><input type="text" name="user" value="" placeholder="Username" onfocus required=""></td>
+			</tr>
+			<tr>
+				<td class="title">Password</td>
+				<td><input type="password" name="pass" value="" placeholder="password" required=""></td>
+			</tr>
+			<tr>
+				<td><a href="#">ForgetPassword?</a></td>
+				<td align="right"><input type="submit" value="Login"></td>
+			</tr>
+		</form>
+	</table>
+</fieldset>
+</body>
+</html>

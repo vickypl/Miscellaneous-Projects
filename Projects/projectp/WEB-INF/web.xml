@@ -1,0 +1,25 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   
+     <servlet>	
+		<servlet-name>s1</servlet-name>	
+		<servlet-class>CalcController</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s1</servlet-name>	
+		<url-pattern>/ao</url-pattern> 
+   </servlet-mapping>	
+    <servlet>	
+		<servlet-name>s2</servlet-name>	
+		<servlet-class>CalcResultService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s2</servlet-name>	
+		<url-pattern>/calresult</url-pattern> 
+   </servlet-mapping>	
+   
+</web-app>

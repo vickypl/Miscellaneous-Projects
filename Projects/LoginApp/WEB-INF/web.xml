@@ -1,0 +1,26 @@
+<web-app>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<!--  -->
+	<context-param>
+		<param-name>usr</param-name>
+		<param-value>sis</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>pass</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>UserHandle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/page1</url-pattern>
+	</servlet-mapping>
+
+</web-app>

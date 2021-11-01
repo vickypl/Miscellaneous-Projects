@@ -1,0 +1,81 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   
+     <servlet>	
+		<servlet-name>s1</servlet-name>	
+		<servlet-class>ShowAllStudentServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s1</servlet-name>	
+		<url-pattern>/showallstu</url-pattern> 
+   </servlet-mapping>	
+   
+     <servlet>	
+		<servlet-name>s2</servlet-name>	
+		<servlet-class>DeleteStudentServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s2</servlet-name>	
+		<url-pattern>/deletestu</url-pattern> 
+   </servlet-mapping>
+
+   <servlet>	
+		<servlet-name>s3</servlet-name>	
+		<servlet-class>AddStudentFormServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s3</servlet-name>	
+		<url-pattern>/addstuform</url-pattern> 
+   </servlet-mapping>	
+   
+   <servlet>	
+		<servlet-name>s4</servlet-name>	
+		<servlet-class>AddStudentRecordServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s4</servlet-name>	
+		<url-pattern>/addsturecord</url-pattern> 
+   </servlet-mapping>	
+   
+    <servlet>	
+		<servlet-name>s5</servlet-name>	
+		<servlet-class>UpdateStudentFormServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s5</servlet-name>	
+		<url-pattern>/updatestuform</url-pattern> 
+   </servlet-mapping>	
+   
+   <servlet>	
+		<servlet-name>s6</servlet-name>	
+		<servlet-class>UpdateStudentRecordServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s6</servlet-name>	
+		<url-pattern>/updatesturecord</url-pattern> 
+   </servlet-mapping>	
+   
+     <servlet>	
+		<servlet-name>s7</servlet-name>	
+		<servlet-class>ShowAllStudentCheckBoxOptionServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s7</servlet-name>	
+		<url-pattern>/showallcheckbox</url-pattern> 
+   </servlet-mapping>	
+   
+     <servlet>	
+		<servlet-name>s8</servlet-name>	
+		<servlet-class>DeleteManyStudentsServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s8</servlet-name>	
+		<url-pattern>/deletemanystudentrecord</url-pattern> 
+   </servlet-mapping>	
+   
+   
+</web-app>

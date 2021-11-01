@@ -1,0 +1,97 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+	<context-param>
+		<param-name>sis_logo</param-name>
+		<param-value>sis2.jpg</param-value>
+    	</context-param>
+	
+	<context-param>
+		<param-name>sis_msg</param-name>
+		<param-value>Success is sure</param-value>
+    	</context-param>
+	
+	<context-param>
+		<param-name>sis_contact</param-name>
+		<param-value>9009442844</param-value>
+    	</context-param>
+
+	
+	
+   <servlet>	
+		<servlet-name>ts</servlet-name>	
+		<servlet-class>TestServlet</servlet-class>	
+   </servlet>	
+   
+   
+   <servlet-mapping>	
+	   <servlet-name>ts</servlet-name>	
+	   <url-pattern>/test</url-pattern> 
+   </servlet-mapping>	
+   
+    <servlet>	
+		<servlet-name>js</servlet-name>	
+		<servlet-class>JavaTrainerService</servlet-class>	
+		  		
+			<init-param>
+			<param-name>trainer_name</param-name>
+			<param-value>Sk</param-value>
+			</init-param>
+			
+			<init-param>
+			<param-name>trainer_ex</param-name>
+			<param-value>+1224</param-value>
+			</init-param>
+			
+			<init-param>
+			<param-name>trainer_img</param-name>
+			<param-value>sk.jpg</param-value>
+			</init-param>
+			
+			<init-param>
+			<param-name>java_topic</param-name>
+			<param-value>data type ,loop ,ifelse array,oop,eh,fh,mt,cf</param-value>
+			</init-param>
+		 
+   </servlet>	
+   
+   <servlet-mapping>	
+	   <servlet-name>js</servlet-name>	
+		<url-pattern>/java</url-pattern> 
+   </servlet-mapping>
+   
+     <servlet>	
+		<servlet-name>hs</servlet-name>	
+		<servlet-class>HtmlTrainerService</servlet-class>	
+		 <init-param>
+			<param-name>trainer_name</param-name>
+			<param-value>ramesh</param-value>
+			</init-param>
+			
+			<init-param>
+			<param-name>trainer_ex</param-name>
+			<param-value>+50000</param-value>
+			</init-param>
+			
+			<init-param>
+			<param-name>trainer_img</param-name>
+			<param-value>ramesh.jpg</param-value>
+			</init-param>
+			
+			<init-param>
+			<param-name>html_topic</param-name>
+			<param-value>table form list,fieldset  hr br</param-value>
+			</init-param>
+		
+		
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>hs</servlet-name>	
+		<url-pattern>/html</url-pattern> 
+   </servlet-mapping>	
+
+   
+</web-app>

@@ -1,0 +1,123 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>home</welcome-file>
+  </welcome-file-list>
+
+   <servlet>  
+    <servlet-name>hom</servlet-name> 
+    <servlet-class>HomeServlet</servlet-class>  
+   </servlet> 
+   <servlet-mapping>  
+     <servlet-name>hom</servlet-name>  
+    <url-pattern>/home</url-pattern> 
+   </servlet-mapping> 
+
+   <servlet>  
+    <servlet-name>loghom</servlet-name> 
+    <servlet-class>LoggedHome</servlet-class>  
+   </servlet> 
+   <servlet-mapping>  
+     <servlet-name>loghom</servlet-name>  
+    <url-pattern>/homeLogged</url-pattern> 
+   </servlet-mapping> 
+
+   <servlet>  
+    <servlet-name>form</servlet-name> 
+    <servlet-class>LoginFormServlet</servlet-class>  
+   </servlet> 
+   <servlet-mapping>  
+     <servlet-name>form</servlet-name>  
+    <url-pattern>/login</url-pattern> 
+   </servlet-mapping>
+
+  <servlet>  
+    <servlet-name>main</servlet-name> 
+    <servlet-class>MainServlet</servlet-class>  
+   </servlet> 
+   <servlet-mapping>  
+     <servlet-name>main</servlet-name>  
+    <url-pattern>/mainServ</url-pattern> 
+   </servlet-mapping>
+
+  <servlet>  
+    <servlet-name>update</servlet-name> 
+    <servlet-class>UpdateFormServlet</servlet-class>  
+   </servlet> 
+   <servlet-mapping>  
+     <servlet-name>update</servlet-name>  
+    <url-pattern>/updateFormServ</url-pattern> 
+   </servlet-mapping>
+
+  <servlet>  
+    <servlet-name>logut</servlet-name> 
+    <servlet-class>LogoutServlet</servlet-class>  
+   </servlet> 
+   <servlet-mapping>  
+     <servlet-name>logut</servlet-name>  
+    <url-pattern>/logout</url-pattern> 
+   </servlet-mapping>
+
+   <servlet>	
+		<servlet-name>s1</servlet-name>	
+		<servlet-class>MyServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>s1</servlet-name>	
+		<url-pattern>/first</url-pattern> 
+   </servlet-mapping>	
+   
+   <!--  -->
+
+    <servlet> 
+    <servlet-name>s2</servlet-name> 
+    <servlet-class>AdminLogin</servlet-class>  
+    </servlet> 
+    <servlet-mapping>  
+      <servlet-name>s2</servlet-name>  
+      <url-pattern>/admin</url-pattern> 
+    </servlet-mapping>
+
+    <!--  -->
+
+    <servlet> 
+    <servlet-name>s3</servlet-name> 
+    <servlet-class>ScoreUpdate</servlet-class>  
+    </servlet> 
+    <servlet-mapping>  
+      <servlet-name>s3</servlet-name>  
+      <url-pattern>/update</url-pattern> 
+    </servlet-mapping>
+
+    <servlet> 
+    <servlet-name>s4</servlet-name> 
+    <servlet-class>UserListPrinter</servlet-class>  
+    </servlet> 
+    <servlet-mapping>  
+      <servlet-name>s4</servlet-name>  
+      <url-pattern>/printer</url-pattern> 
+    </servlet-mapping>
+
+    <!--  -->
+
+    <servlet> 
+    <servlet-name>s5</servlet-name> 
+    <servlet-class>AddUserByAdminServlet</servlet-class>  
+    </servlet> 
+    <servlet-mapping>  
+      <servlet-name>s5</servlet-name>  
+      <url-pattern>/adduser</url-pattern> 
+    </servlet-mapping>
+
+    <!--  -->
+
+    <servlet> 
+    <servlet-name>s6</servlet-name> 
+    <servlet-class>RegisterUser</servlet-class>  
+    </servlet> 
+    <servlet-mapping>  
+      <servlet-name>s6</servlet-name>  
+      <url-pattern>/register</url-pattern> 
+    </servlet-mapping>
+
+</web-app>

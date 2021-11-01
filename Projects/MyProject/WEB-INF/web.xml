@@ -1,0 +1,56 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <context-param>
+    <param-name>class</param-name>
+    <param-value>DB-Connector</param-value>
+  </context-param>
+  <context-param>
+    <param-name>admin</param-name>
+    <param-value>The Vicky pL</param-value>
+  </context-param>
+<!-- <classpath>
+	<classpathentry exported="true" kind="lib" path="C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc6.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:\dev\server\apache-tomcat-8.0.21\lib\servlet-api.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath> -->
+    
+   <servlet>	
+		  <servlet-name>db</servlet-name>	
+      <servlet-class>FinalConnect</servlet-class>  
+		  <!-- <servlet-class>DbConnector</servlet-class>	 -->
+      <init-param>
+        <param-name>user</param-name>
+        <param-value>system</param-value>
+      </init-param>
+      <init-param>
+        <param-name>pass</param-name>
+        <param-value>root@1234</param-value>
+      </init-param>
+   </servlet>	
+   <servlet-mapping>	
+	    <servlet-name>db</servlet-name>	
+		  <url-pattern>/first</url-pattern> 
+   </servlet-mapping>	
+   
+  <servlet> 
+    <servlet-name>ddb</servlet-name> 
+    <servlet-class>DeptConnector</servlet-class>  
+        <init-param>
+        <param-name>user</param-name>
+        <param-value>Departmentsystem</param-value>
+      </init-param>
+      <init-param>
+        <param-name>pass</param-name>
+        <param-value>depart@1234</param-value>
+      </init-param>
+  </servlet> 
+  <servlet-mapping>  
+      <servlet-name>ddb</servlet-name>  
+      <url-pattern>/second</url-pattern> 
+  </servlet-mapping> 
+
+</web-app>

@@ -1,0 +1,18 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   <servlet>	
+		<servlet-name>ls</servlet-name>	
+		<servlet-class>LoginServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ls</servlet-name>	
+		<url-pattern>/login</url-pattern> 
+   </servlet-mapping>	
+   
+    
+   
+</web-app>

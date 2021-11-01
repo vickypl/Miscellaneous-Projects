@@ -1,0 +1,53 @@
+<web-app>
+
+  <welcome-file-list>
+  <welcome-file>sis.html</welcome-file>
+  </welcome-file-list>
+    
+   <servlet>	
+		<servlet-name>ts</servlet-name>	
+		<servlet-class>TestServlet</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>ts</servlet-name>	
+		<url-pattern>/test</url-pattern> 
+   </servlet-mapping>	
+   
+    <servlet>	
+		<servlet-name>rs</servlet-name>	
+		<servlet-class>DiceService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>rs</servlet-name>	
+		<url-pattern>/dice</url-pattern> 
+   </servlet-mapping>
+   
+     <servlet>	
+		<servlet-name>rs2</servlet-name>	
+		<servlet-class>DiceService2</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>rs2</servlet-name>	
+		<url-pattern>/dice2</url-pattern> 
+   </servlet-mapping>	
+
+   <servlet>	
+		<servlet-name>cs</servlet-name>	
+		<servlet-class>CalcService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>cs</servlet-name>	
+		<url-pattern>/calc</url-pattern> 
+   </servlet-mapping>	
+   
+   
+    <servlet>	
+		<servlet-name>sf</servlet-name>	
+		<servlet-class>StudentFormService</servlet-class>	
+   </servlet>	
+   <servlet-mapping>	
+	   <servlet-name>sf</servlet-name>	
+		<url-pattern>/sform</url-pattern> 
+   </servlet-mapping>	
+   
+</web-app>

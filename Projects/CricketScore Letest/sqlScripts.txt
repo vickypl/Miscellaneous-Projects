@@ -1,0 +1,20 @@
+create table score(id number(10) primary key, over number(10), ball number(10) run number(10));
+inser into score values(sc_id.nextval, 4, 1, 2);
+inser into score values(sc_id.nextval, 4, 2, 4);
+inser into score values(sc_id.nextval, 4, 3, 0);
+inser into score values(sc_id.nextval, 4, 4, 6);
+inser into score values(sc_id.nextval, 4, 5, 1);
+inser into score values(sc_id.nextval, 4, 6, 1);
+
+
+
+create sequence scoupd;
+create table scoreUpdater(id number(10) primary key, username varchar2(10) unique, password varchar2(10));
+
+insert into scoreupdater values(scoupd.nextval, 'bcci123', '12345');
+insert into scoreupdater values(scoupd.nextval, 'dhoni43', '8678');
+insert into scoreupdater values(scoupd.nextval, 'kohli76', '1fs34');
+insert into scoreupdater values(scoupd.nextval, 'ravi87', '6456gf');
+insert into scoreupdater values(scoupd.nextval, 'ashwin43', '1gdfg');
+
+select * from scoreupdater where username=bcci123 and password=12345;
